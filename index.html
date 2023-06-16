@@ -1,44 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="standard.css">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8"> 
+<link rel="stylesheet" href="css/bootstrap.min.css"> 
+<link rel="stylesheet" type="text/css" href="css/home.css"> 
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<title>Home Page</title>
+
 </head>
 <body>
-<header> <h2>RK Constructions Project</h2></header>
-	<div class="class_home">
-		    &nbsp;&nbsp;<a href="index.html" style="text-decoration:none"> Home </a>&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="#" style="text-decoration:none"> Our Ideas </a>&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="#" style="text-decoration:none"> About us </a>&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="contactus.html" style="text-decoration:none"> Contact Us </a>&nbsp;&nbsp;&nbsp;&nbsp;
-		</tr>
+<form class="container-fluid">
+<div id="heade" class="container-fluid">
+<div class="headeH"><h1>RK Constructions Project</h1></div>
+</div>
+<div id="heade1" class="container-fluid">
+  <div class="row">
+  <div class="col-md-1">
+  <a href="index.html">Home</a>
+  </div>
+  <div class="col-md-1">
+    <a href="contactus.html">Projects</a>
+  </div>
+  <div class="col-md-1">
+  <a href="contactus.html">Contact us</a>
+  </div>
+  <div class="col-md-1">
+  <a href="about_us.html">About us</a>
+  </div>
+  <div class="col-md-1">
+    <a href="about_us.html">Our ideas</a>
+  </div>
+
+  </div>
+</div> 
+<div class="container-fluid" style="color:#b3ffb3;" id="heade2">
+<marquee direction="left"><b>Welcome to RK Constructions Pro !!! for any flat related query please contact us @ +91-7454049786</b></marquee>
+</div>
+
+<div id="lef" class="containe-fluid">
+	<div class="row"><h5 style="padding-left: 50px; "><u><b>Our Services</b></u></h5></div>
+	<div class="row" style="text-align: left;"> 
+	<ul style="list-style-type:square;">
+		<li><a href="#">Building estimate</a></li>
+		<li><a href="#">Interior</a></li>
+		<li><a href="#">Servey</a></li>
+		<li><a href="#">3D Max</a></li>
+    <li><a href="#">Our recent projects</a></li>
+	</ul>
 	</div>
-			<div class="col-sm-3 class_left">
-				<nav>
-					&nbsp;&nbsp;<p text-alignment="center"><b><ins>Our services</ins></b></p>
-					<ul>
-						&nbsp;&nbsp;<li>Building estimate</li>
-						&nbsp;&nbsp;<li>Interior</li>
-						&nbsp;&nbsp;<li>Servey</li>
-						&nbsp;&nbsp;<li>3D Max</li>
-					</ul>
-				</nav>
-			</div>
-			<div class="col-sm-7 class_center">
-			<article>
-				<h1> &nbsp;&nbsp;RK Constructions Project</h1>
-				<h4>&nbsp;&nbsp;Note: This website is under maintenance</h4>
-			    </br></br></br></br></br></br></br></br></br></br>
-				<h4 style="color: green;">&nbsp;&nbsp;Our Developer contact : rkconstructionspro@gmail.com</h4>
-			</article>
-			</div>
-
-			
-
-			<div class="class_footer">
-				&nbsp;&nbsp;You can contact us +91-7454049786 or <a aria-label="Chat with us on WhatsApp" href="https://wa.me/+91-7454049786"> <img alt="Chat on WhatsApp" src="WhatsAppButtonGreenLarge.png" />
-				<a /> or mail us <i class="material-icons">&#xe0be;</i> rkconstructionspro@gmail.com
-			</div>
+</div> 
+   
+<div id="cent"> 
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Images/Carousel_Images/1.jpg" class="d-block w-100" alt="1">
+    </div>
+    <div class="carousel-item">
+      <img src="Images/Carousel_Images/2.jpg" class="d-block w-100" alt="3">
+    </div>
+    <div class="carousel-item">
+      <img src="Images/Carousel_Images/3.jpg" class="d-block w-100" alt="2">
+    </div>
+    <div class="carousel-item">
+      <img src="Images/Carousel_Images/4.jpg" class="d-block w-100" alt="4">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>    
+<div class="container-fluid" id="righ">
+  <div class="row"><h5 style="padding-left: 90px; padding-bottom: 10px; text-align: center;"><u><b>Notice Board</b></u></h5></div>
+	<div class="row" style="padding-right: 10px;">
+	<marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();" height="450px">
+		<ul style="list-style-type:square;">
+			<p>This is the very first Constructions project in India by Mr. Rajid Khan</p>
+		</ul>
+		</marquee>
+</div>
+</div>
+<div class="container-fluid" id="foot">
+  You can contact us +91-7454049786 or <a aria-label="Chat with us on WhatsApp" href="https://wa.me/+91-7454049786"> <img alt="Chat on WhatsApp" src="/Images/icons/whatsapp.jfif" />
+    <a /> or mail us rkconstructionspro@gmail.com
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+<script src="js/bootstrap.min.js"></script>
+ 
+</form>
 </body>
 </html>
-
