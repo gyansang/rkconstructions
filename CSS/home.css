@@ -7,7 +7,7 @@
 	color: antiquewhite;
 	}
 .headeH{
-	animation-name: moveInLeft; animation-duration: 2s; }
+	animation-name: moveInLeft; animation-duration: 4s; }
 @keyframes moveInLeft{
 	0%{
 		opacity: 0; transform: translateX(-200px); 
@@ -31,19 +31,19 @@
 	margin: 0px 0px 0px 0px; padding-bottom: 10px; 
 }
 #lef{
-	text-align:center; background-image: linear-gradient(to bottom right, #e6ffff, #ccff99); 
+	text-align:left; background-image: linear-gradient(to bottom right, #e6ffff, #ccff99); 
 	height:500px; width:20%; float:left; margin: 0px 0px 0px 0px; padding-top: 05px;
-  padding-right: 30px; padding-bottom: 0px; padding-left: 20px; padding-top: 8px; 
-  word-wrap: break-word;
+	padding-right: 15px; padding-bottom: 0px; padding-left: 15px; padding-top: 8px; 
+  	word-wrap: break-word;
  }
 #cent{
 	text-align:center; background-color:#e6ffff; height:500px; width:55%; float:left; 
 	margin: 0px 0px 0px 0px;
 	}
 #righ{
-	text-align:center; background-image: linear-gradient(#fcd670, rgb(99, 175, 143)); 
+	text-align:left; background-image: linear-gradient(#fcd670, rgb(99, 175, 143)); 
 	height:500px; width:25%; float:right; margin: 0px 0px 0px 0px; 
-	padding-right: 10px; padding-bottom: 0px; padding-left: 2px; padding-top: 8px; 
+	padding-right: 20px; padding-bottom: 0px; padding-left: 20px; padding-top: 8px; 
 	word-wrap: break-word;
 }
 #foot{
