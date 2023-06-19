@@ -1,7 +1,8 @@
 @charset "UTF-8";
 #heade{
-	text-align:center; background-image: linear-gradient(-90deg, #b3b3ff, #c4ff4d); font-size: 35px; float:up; margin: 0px 0px 0px 0px; 
+	text-align:center; background-image: linear-gradient(-90deg, #4a4ace, #c4ff4d); font-size: 35px; float:up; margin: 0px 0px 0px 0px; 
 	padding-top: 25px; padding-bottom: 25px; clip-path:polygon(0 0,100% 0, 100% 100%, 0 100%); background-position:top; 
+	color: antiquewhite;
 	}
 .headeH{
 	animation-name: moveInLeft; animation-duration: 2s; }
