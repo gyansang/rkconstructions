@@ -27,10 +27,10 @@
 	text-align:center; background-color:#1a1aff; height:24px; width:100%; float:up; margin: 0px 0px 0px 0px; padding-bottom: 10px; 
 }
 #lef{
-	text-align:center; background-image: linear-gradient(to bottom right, #e6ffff, #ccff99); 
-	height:1000px; width:20%; float:left; margin: 0px 0px 0px 0px; padding-top: 05px;
-  padding-right: 30px; padding-bottom: 0px; padding-left: 20px; padding-top: 8px; 
-  word-wrap: break-word;
+	text-align:left; background-image: linear-gradient(to bottom right, #e6ffff, #ccff99); 
+	height:500px; width:20%; float:left; margin: 0px 0px 0px 0px; padding-top: 05px;
+	padding-right: 15px; padding-bottom: 0px; padding-left: 15px; padding-top: 8px; 
+  	word-wrap: break-word;
  }
 #cent{
 	text-align:center; background-color:white; height:1000px; padding-top: 6px; width:55%; float:left; margin: 0px 0px 0px 0px;

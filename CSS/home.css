@@ -43,8 +43,7 @@
 #righ{
 	text-align:left; background-image: linear-gradient(#fcd670, rgb(99, 175, 143)); 
 	height:500px; width:25%; float:right; margin: 0px 0px 0px 0px; 
-	padding-right: 20px; padding-bottom: 0px; padding-left: 20px; padding-top: 8px; 
-	word-wrap: break-word;
+	padding: 5px; word-wrap: break-word;
 }
 #foot{
 	text-align:left; background-color:#6c7a89; color:aliceblue; height:30px; width:100%; 
