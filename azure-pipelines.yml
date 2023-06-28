@@ -15,5 +15,16 @@ steps:
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+    displayName: 'Run a multi-line script'
+
+steps:
+- script: echo Starting execution of the main code
+  displayName: 'Beggining of execution of terraform code'
+
+- task: TerraformInstaller@1
+  inputs:
+    terraformVersion: 'latest'
+
+
+
+
