@@ -6,7 +6,7 @@
 trigger:
 - master
 stages:
-- stage: 'First Stage'
+- stage: 'First_Stage'
   displayName: 'Welcome to infra deployment via Terraform'
   jobs:
     - job: 'Infra_Creation'
