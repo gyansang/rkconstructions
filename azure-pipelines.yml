@@ -4,7 +4,7 @@
 # https://aka.ms/yaml
 
 trigger:
-- master
+- none
 stages:
 - stage: 'First_Stage'
   displayName: 'Welcome to infra deployment via Terraform'
