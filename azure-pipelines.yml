@@ -19,37 +19,37 @@ stages:
           inputs:
             terraformVersion: 'latest'
         - task: TerraformTaskV4@4
-          displayName: 'Terraform init'
+          displayName: 'Terraform initialization'
           inputs:
             provider: 'azurerm'
             command: 'init'
-            commandOptions: 'terraform init'
+            commandOptions: 'terraform_init'
             backendServiceArm: 'RKConstructions-sc'
             backendAzureRmResourceGroupName: 'tfstate'
             backendAzureRmStorageAccountName: 'tfstate18571'
             backendAzureRmContainerName: 'tfstate'
             backendAzureRmKey: 'sp=r&st=2023-07-06T21:04:46Z&se=2024-06-30T05:04:46Z&spr=https&sv=2022-11-02&sr=c&sig=TJa0icP%2FOqB8%2FckFCkVsZra23wpZUYq%2BPvf7vlX00fw%3D'
         - task: TerraformTaskV4@4
-          displayName: 'Terraform validate'
+          displayName: 'Terraform validatation'
           inputs:
             provider: 'azurerm'
             command: 'validate'
             workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform'
-            commandOptions: 'terraform validate'
+            commandOptions: 'terraform_validate'
         - task: TerraformTaskV4@4
-          displayName: 'Terraform plan'
+          displayName: 'Terraform_plan'
           inputs:
             provider: 'azurerm'
             command: 'plan'
             workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform'
-            commandOptions: 'terraform plan'
+            commandOptions: 'terraform_plan'
             environmentServiceNameAzureRM: 'RKConstructions-sc'
         - task: TerraformTaskV4@4
-          displayName: 'Terraform apply'
+          displayName: 'Terraform_apply'
           inputs:
             provider: 'azurerm'
             command: 'apply'
-            commandOptions: 'terraform apply -auto-approve'
+            commandOptions: 'terraform_apply_auto-approve'
             environmentServiceNameAzureRM: 'RKConstructions-sc'
 
 
