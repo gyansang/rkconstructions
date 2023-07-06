@@ -17,10 +17,6 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     displayName: 'Run a multi-line script'
 
-steps:
-- script: echo Starting execution of the main code
-  displayName: 'Beggining of execution of terraform code'
-
 - task: TerraformTaskV4@4
   inputs:
     provider: 'azurerm'
