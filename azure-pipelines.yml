@@ -21,10 +21,30 @@ steps:
 - script: echo Starting execution of the main code
   displayName: 'Beggining of execution of terraform code'
 
-- task: TerraformInstaller@1
+- task: TerraformTaskV4@4
   inputs:
-    terraformVersion: 'latest'
+    provider: 'azurerm'
+    command: 'init'
+    commandOptions: 'terraform init'
+    backendServiceArm: 'RKConstructions-sc'
+    backendAzureRmResourceGroupName: 'tfstate'
+    backendAzureRmStorageAccountName: 'tfstate18571'
+    backendAzureRmContainerName: 'tfstate'
+    backendAzureRmKey: 'sp=r&st=2023-07-06T21:04:46Z&se=2024-06-30T05:04:46Z&spr=https&sv=2022-11-02&sr=c&sig=TJa0icP%2FOqB8%2FckFCkVsZra23wpZUYq%2BPvf7vlX00fw%3D'
 
+- task: TerraformTaskV4@4
+  inputs:
+    provider: 'azurerm'
+    command: 'validate'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform'
+    commandOptions: 'terraform validate'
 
+- task: TerraformTaskV4@4
+  inputs:
+    provider: 'azurerm'
+    command: 'plan'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform'
+    commandOptions: 'terraform plan'
+    environmentServiceNameAzureRM: 'RKConstructions-sc'
 
 
