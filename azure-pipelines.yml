@@ -18,7 +18,8 @@ steps:
     displayName: 'Run a multi-line script'
 
 - task: TerraformTaskV4@4
-  inputs:
+  displayName: 'init'
+  inputs: 
     provider: 'azurerm'
     command: 'init'
     commandOptions: 'terraform init'
@@ -29,6 +30,7 @@ steps:
     backendAzureRmKey: 'sp=r&st=2023-07-06T21:04:46Z&se=2024-06-30T05:04:46Z&spr=https&sv=2022-11-02&sr=c&sig=TJa0icP%2FOqB8%2FckFCkVsZra23wpZUYq%2BPvf7vlX00fw%3D'
 
 - task: TerraformTaskV4@4
+  displayName: 'terrafrom validate'
   inputs:
     provider: 'azurerm'
     command: 'validate'
@@ -36,6 +38,7 @@ steps:
     commandOptions: 'terraform validate'
 
 - task: TerraformTaskV4@4
+  displayName: 'Terraform plan'
   inputs:
     provider: 'azurerm'
     command: 'plan'
